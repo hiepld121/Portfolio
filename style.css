@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+}
+
+header .navbar-brand {
+    font-size: 36px;
+    color: #fff;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;}
+
+.navbar-brand i {
+    color: green;
+    font-size: 45px;
+}
+
+.fa .fas {
+    font-weight: 900;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    transition: all .5s;
+}
+
+.navbar-nav .nav-item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #35a22c;
+    display: block;
+    transition: all .5s;
+    
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #35a22c;
+}
+
+.navbar-nav .nav-item:hover::after {
+    width: 100%;
+    
+}
+
+
+.navbar-nav .nav-item.active .nav-link  {
+    color: #35a22c; }
+
+.navbar-nav .nav-item.active::after {
+        width: 100%;
+    }
+
+.nav-item {
+    font-weight: bold;
+}
+
+.carousel-indicators li{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators li.active{
+    background-color: #35a22c;
+   
+}
+
+.carousel-item {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+.carousel-item:nth-child(1) {
+    background-image: url(./image/finland.jpg);
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(./image/mountains.jpg);
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(./image/mountains-1.jpg);
+}
+
+.carousel-caption img {
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.img_thumb {
+    width: 150px;
+    margin: auto;
+
+}
+
+.nav{
+    justify-items: center;
+    justify-content: center;
+}
+
+.carousel-caption {
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#project{
+    margin-bottom: 70px;
+}
+
+.card-title{
+    font-size: 19px;
+    transition: all 1s;
+}
+
+.card{
+   border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 13%);
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+
+}
+
+.card-img-top{
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+}
+
+.card-item .card-body{
+    border: 1px solid transparent;
+    border-radius: 0 0 15px 15px;
+    transition: all .5s;
+    
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+.card:hover .card-title{
+    color: #35a22c;
+    
+   
+}
+
+.card:hover .card-body{
+    border-color: #35a22c;
+    border-top-color: transparent;
+    
+}
+
+.tab-content>.active {
+    display: flex;
+}
+
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+
+.overlay{
+    background: rgba(39,43,54,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#feature {
+    background: url(./image/3.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#feature .overlay {
+    background: rgba(7,10,12,.72);
+}
+
+
+.feature_text{
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.feature_text h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature_content{
+    position: relative;
+    color: white;
+   
+}
+
+.feature_content .row .col-4{
+    text-align: center;
+}
+
+.feature_item{
+    font-size: 48px;
+    color: #35a22c;
+}
+
+.feature_item h4 {
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    padding-top: 25px;
+    font-weight: 800;
+}
+
+.feature_item p {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.feature_item {
+    padding: 40px 40px;
+    transition: 0.3s;
+    border-radius: 10px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(3px);
+    transition: all 0.5s;
+}
+
+.feature_item:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+#award {
+    position: relative;
+    color: #585858;
+    padding: 70px 0;
+}
+
+.award_bg {
+        background-image: url(./image/memphis_3.png);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+.award_logo img {
+    width: 100%;
+}
+
+.award_text{
+    border: 1px solid transparent;
+    box-shadow: #585858;
+    border-radius: 15px;
+    text-align: left;
+    color: black    ;
+    background: rgba(255,255,255,.25);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    padding: 45px;
+}
+
+.award_text h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.award_logo{
+    text-align: center;
+    padding: 45px 0;
+}
+
+footer{
+    background-color: black;
+    padding: 50px 0;
+}
+
+footer a, footer p {
+    color: grey;
+}
+
+.social a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    transition: all .5s;
+}
+
+.footdown{
+    border-top: 1px solid #aaa;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.social i:hover {
+    color: #35a22c;
+    border: 1px solid #35a22c;
+}
+
+.footdown a {
+    text-decoration: none;
+}
+
+.footdown a:hover{
+    color: #35a22c;
+}
+
+
+
